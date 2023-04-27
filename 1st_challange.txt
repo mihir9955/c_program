@@ -1,0 +1,87 @@
+1.To print first 10 natural numbers.
+
+
+#include <stdio.h>
+
+int main() {
+    int i;
+    printf("THE FIRST 10 NATURAL NATURAL NUMBERS ARE: \n");
+    for(i=1;i<=10;i++)
+        {
+            printf("%d \n", i);
+        }
+    return 0;
+}
+
+
+2.Sum of first 10 natural numbers.
+
+#include <stdio.h>
+
+int main() {
+    int i,SUM=0 ;
+    printf("THE SUM OF FIRST 10 NATURAL NATURAL NUMBERS IS: ");
+    for(i=1;i<=10;i++)
+        {
+            SUM=i+SUM;
+        }
+    printf("%d",SUM);
+    return 0;
+}
+
+3.Sum of user entered numbers.
+
+#include <stdio.h>
+
+int main() {
+    int n,j,i,SUM=0 ;
+    printf("ENTER THE NUMBER: ");
+    scanf("%d",&n);
+    printf("FOLLOWING ARE THE %d NATURAL NUMBERS: \n",n);
+    for(j=1;j<=n;j++)
+        {
+            printf("%d\n",j);
+        }
+    printf("THE SUM OF FIRST %d NATURAL NATURAL NUMBERS IS: ",n);
+    for(i=1;i<=n;i++)
+        {
+            SUM=i+SUM;
+        }
+    printf("%d",SUM);
+    return 0;
+}
+
+4.Avg. and Sum of 10 user entered numbers.
+
+#include <stdio.h>
+
+int main() {
+    int i,n,SUM=0;
+    float AVG;
+    printf("ENTER 10 NUMBERS: \n");
+    for(i=1;i<11;i++)
+    {
+        printf("enter the %dth term\n",i);
+        scanf("%d",&n);
+        SUM=n+SUM;
+    }
+    printf("THE SUM IS %d\n",SUM);
+    printf("THE AVERAGE IS %f\n",AVG=SUM/10);
+    return 0;
+}
+
+6.Multiplication table.
+
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    printf("ENTER A NUMBER: ");
+    scanf("%d",&n);
+    for(i=1;i<=10;i++)
+    {
+        printf("%d*%d=%d\n",n,i,n*i);
+    }
+    return 0;
+}
+
